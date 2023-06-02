@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+a{
+    cursor: pointer;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#home::before{
+    content: "";
+    background-image: url(https://images.unsplash.com/photo-1559163499-413811fb2344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbXB1dGVyJTIwY29mZmVlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity: .5;
+}
+#home #nav{
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+#home #nav ul{
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+}
+#home #nav ul li{
+    list-style: none;
+}
+#home #nav ul li a{
+    text-decoration: none;
+    color: navy;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    padding: 12px;
+}
+#home #nav ul li a:hover{
+    text-emphasis: none;
+    text-decoration: none;
+    color: green;
+    list-style: none;
+    background-color: white;
+}
+
+#Contacts{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #393E46;
+}
+#Contacts div ul li {
+    list-style: none;
+}
+#Contacts div ul li a{
+    list-style: none;
+    text-decoration: none;
+    line-height: 40px;
+    color: white;
+}
